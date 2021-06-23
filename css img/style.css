@@ -48,10 +48,7 @@
     font-size: 18px;
 }
 .header-nav ul li a:hover{
-    color:lawngreen;
-  
-    width: 100%;
-    padding: 5px;
+  color:crimson
 }
 #internet-item{
     display: flex;
