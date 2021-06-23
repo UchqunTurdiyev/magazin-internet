@@ -6,10 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>magazin saiti</title>
     <link rel="stylesheet" href="./css img/style.css">
+    <link rel="stylesheet" href="./css img/main.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div id="magazin">
+    <header>
+        <div class="header-nav">
+            <h2>AVVA</h2>
+            <div id="header-navigation">
+            <ul>
+                <li><a class="home-menu" href="#">Home</a></li>
+                <li><a class="home-menu" href="#">About</a></li>
+                <li><a class="home-menu" href="#">Kostyums</a></li>
+                <li><a class="home-menu" href="#">Kurtki</a></li>
+                <li><a class="home-menu" href="#">Shirt</a></li>
+                <li><a class="home-menu" href="#">Bryuki</a></li>
+                <li><a class="home-menu" href="#">Fudbolki</a></li>
+                <li><a class="home-menu" href="#">Contacts</a></li>
+            </ul>
+</div>
+            <i><img id="top-right" src="./css img/top-right.png" alt=""></i>
+            <div id="input"><input type="text"></div>
+           <div id="search"><i class="fas fa-search"></i></div> 
+        
+    </header>
+    <div id="internet-item">
     <div class="container">
         <div class="card">
             <div class="imgBx">
@@ -18,7 +41,8 @@
                 <ul class="action">
                     <li><i class="fas fa-heart"></i><span>Add to Wishlist</span></li>      
                     <li><i class="fas fa-cart-arrow-down"></i><span>Add to Cart</span></li>
-                    <li><i class="fas fa-eye"></i><span>Viev Detalis</span></li>
+                    <a href="./css img/kostyum2.jpg"> <li><i class="fas fa-eye"></i><span>Viev Detalis</span></li></a>
+                 
                 </ul>
             </div>
             <div class="content">
@@ -208,5 +232,33 @@
         </div>
     </div>
 
+</div>
+
+
+
+</div>
+<script>
+
+var ikon = document.getElementById("search");
+var inp = document.getElementById("input");
+
+ikon.onclick = function (){
+    inp.style.display = ("block");
+    inp.style.color = "#333";
+} 
+ikon.ondblclick = function (){
+    inp.style.display = ("none");
+    inp.style.color = "#333";
+}
+
+var topR = document.getElementById("top-right");
+var nav = document.getElementById("header-navigation");
+
+topR.onclick = function(){
+    nav.style.display = ("block");
+    nav.style.color = ("white");
+}
+
+</script>
 </body>
 </html>
