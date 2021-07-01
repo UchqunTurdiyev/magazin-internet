@@ -48,7 +48,7 @@
     font-size: 18px;
 }
 .header-nav ul li a:hover{
-  color:crimson
+  color:crimson;
 }
 #internet-item{
     display: flex;
@@ -181,5 +181,26 @@
     transition-delay: 0.15s;
 }
 .action li:nth-child(3){
-    transition-delay: 0.3s;
+    transition-delay: 0.30s;
+}
+.content .raiting i{
+    transform: rotate(0);
+    transition:.5s;
+}
+.content:hover .raiting i{
+
+    transform: rotate(130deg);
+
+}
+.raiting i:nth-child(2){
+    transition-delay: .15s;
+}
+.raiting i:nth-child(3){
+    transition-delay: .30s;
+}
+.raiting i:nth-child(4){
+    transition-delay: .45s;
+}
+.raiting i:nth-child(5){
+    transition-delay: .60s;
 }

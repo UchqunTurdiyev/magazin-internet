@@ -1,0 +1,123 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:#ccc;
+}
+.container{
+    position:relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+.container .card{
+    width:100%;
+    background:#fff;
+}
+.container .card .box{
+    position: relative;
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+}
+.container .card .box img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    transition: .7s ease-in-out;
+    transform-origin: right;
+}
+.container .card:hover .box img{
+    transform: scale(1.4);
+}
+.action{
+    position:absolute;
+    right: 20px;
+    top: 15px;
+}
+.action li{
+    position: relative;
+    transform: translateX(80px)translateY(0);
+    list-style:none;
+    width: 40px;
+    height: 40px;
+    background:#fff;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    padding-top: 15px;
+    margin: 4px;
+    cursor:pointer;
+    transition:.5s ease;
+}
+.action li:hover{
+    background-color:red;
+    color: #fff;
+}
+.action li span{
+    position:absolute;
+    right: 50px;
+    top: 25px;
+    transform: translateX(-50px) translateX(0);
+    white-space:nowrap;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.action li:hover span{
+    opacity: 1;
+    transform: translateY(0) translateX(5px);
+}
+.container .card:hover .action li{
+    transform: translateX(0) translateY(0);
+}
+.action li:nth-child(2){
+   transition-delay: .15s;
+}
+.action li:nth-child(3){
+    transition-delay: .30s;
+ }
+ .content{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px;
+
+ }
+ .content .stars i{
+    transition: 0.5s;
+    transform:rotate(0);
+    color:gold;
+
+ }
+ .content:hover .stars i{
+     transform:rotate(360deg);
+ }
+ .stars .fas:nth-child(2){
+     transition-delay: .15s;
+ }
+ .stars .fas:nth-child(3){
+    transition-delay: .30s;
+}
+.stars .fas:nth-child(4){
+    transition-delay: .45s;
+}
+.stars .fas:nth-child(5){
+    transition-delay: .60s;
+}
